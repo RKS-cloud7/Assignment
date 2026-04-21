@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Thali | Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="home.html" class="brand">Royal Thali</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+<nav class="site-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-hero">
+            <div class="container menu-hero-grid">
+                <div>
+                    <span class="eyebrow">Royal Thali Menu</span>
+                    <h1>Classic favorites and indulgent thali selections, served with style.</h1>
+                    <p>Browse starters, mains, breads, drinks, and desserts. Use the category tabs and spice filter to quickly find the dishes that fit your taste.</p>
+                </div>
+                <div class="hero-offer">
+                    <span>Chef Pick</span>
+                    <strong>Butter Chicken + Garlic Naan</strong>
+                    <p>A rich and crowd-pleasing pairing for a satisfying first order.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-tools">
+                    <div class="menu-tabs" role="tablist" aria-label="Menu Categories">
+                        <button class="tab-btn active" data-category="starters" type="button">Starters</button>
+                        <button class="tab-btn" data-category="vegetarian" type="button">Vegetarian</button>
+                        <button class="tab-btn" data-category="non-vegetarian" type="button">Non-Vegetarian</button>
+                        <button class="tab-btn" data-category="rice-biryani" type="button">Rice &amp; Biryani</button>
+                        <button class="tab-btn" data-category="breads" type="button">Breads</button>
+                        <button class="tab-btn" data-category="drinks" type="button">Drinks</button>
+                        <button class="tab-btn" data-category="desserts" type="button">Desserts</button>
+                    </div>
+                    <div class="menu-filter">
+                        <label for="spice-level">Spice Level</label>
+                        <select id="spice-level">
+                            <option value="all">All</option>
+                            <option value="mild">Mild</option>
+                            <option value="medium">Medium</option>
+                            <option value="hot">Hot</option>
+                        </select>
+                    </div>
+                </div>
+
+                <section class="menu-category active" id="starters">
+                    <h2>Starters</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/samosa.jpg" alt="Samosa" class="menu-img">
+                            <div class="item-info"><h3>Samosa</h3><p>Crispy pastry filled with spiced potatoes and peas.</p></div>
+                            <span class="item-price">$5.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/pakora.jpg" alt="Vegetable Pakora" class="menu-img">
+                            <div class="item-info"><h3>Vegetable Pakora</h3><p>Assorted vegetables in chickpea batter, fried until golden.</p></div>
+                            <span class="item-price">$6.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/paneer-tikka.jpg" alt="Paneer Tikka" class="menu-img">
+                            <div class="item-info"><h3>Paneer Tikka</h3><p>Char-grilled paneer cubes marinated with yogurt and spices.</p></div>
+                            <span class="item-price">$8.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/chicken-tikka.jpg" alt="Chicken Tikka" class="menu-img">
+                            <div class="item-info"><h3>Chicken Tikka</h3><p>Juicy grilled chicken with smoky spice and bright chutney notes.</p></div>
+                            <span class="item-price">$9.99</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="vegetarian">
+                    <h2>Vegetarian Mains</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" class="menu-img">
+                            <div class="item-info"><h3>Paneer Butter Masala</h3><p>Paneer in a rich tomato and cream sauce with smooth spice.</p></div>
+                            <span class="item-price">$12.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/dal-makhani.jpg" alt="Dal Makhani" class="menu-img">
+                            <div class="item-info"><h3>Dal Makhani</h3><p>Slow-cooked black lentils finished with butter and cream.</p></div>
+                            <span class="item-price">$10.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/palak-paneer.jpg" alt="Palak Paneer" class="menu-img">
+                            <div class="item-info"><h3>Palak Paneer</h3><p>Paneer cubes in a silky spinach curry with gentle warmth.</p></div>
+                            <span class="item-price">$12.49</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/gobi-manchurian.jpg" alt="Gobi Manchurian" class="menu-img">
+                            <div class="item-info"><h3>Gobi Manchurian</h3><p>Crisp cauliflower tossed in a spicy Indo-Chinese glaze.</p></div>
+                            <span class="item-price">$9.99</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="non-vegetarian">
+                    <h2>Non-Vegetarian Mains</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/butter-chicken.jpg" alt="Butter Chicken" class="menu-img">
+                            <div class="item-info"><h3>Butter Chicken</h3><p>Creamy tomato curry with tender chicken and buttery depth.</p></div>
+                            <span class="item-price">$13.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/chicken-curry.jpg" alt="Chicken Curry" class="menu-img">
+                            <div class="item-info"><h3>Chicken Curry</h3><p>A bold classic with robust spices and a comforting finish.</p></div>
+                            <span class="item-price">$12.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/rogan-josh.jpg" alt="Rogan Josh" class="menu-img">
+                            <div class="item-info"><h3>Rogan Josh</h3><p>Deeply spiced lamb curry inspired by Kashmiri flavors.</p></div>
+                            <span class="item-price">$15.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/fish-curry.jpg" alt="Fish Curry" class="menu-img">
+                            <div class="item-info"><h3>Fish Curry</h3><p>Tangy and aromatic curry with tender fish pieces.</p></div>
+                            <span class="item-price">$14.49</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="rice-biryani">
+                    <h2>Rice &amp; Biryani</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/veg-biryani.jpg" alt="Veg Biryani" class="menu-img">
+                            <div class="item-info"><h3>Veg Biryani</h3><p>Fragrant rice layered with vegetables and aromatic spices.</p></div>
+                            <span class="item-price">$11.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/chicken-biryani.jpg" alt="Chicken Biryani" class="menu-img">
+                            <div class="item-info"><h3>Chicken Biryani</h3><p>Aromatic basmati rice with chicken and royal biryani masala.</p></div>
+                            <span class="item-price">$13.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="hot">
+                            <img src="images/mutton-biryani.jpg" alt="Mutton Biryani" class="menu-img">
+                            <div class="item-info"><h3>Mutton Biryani</h3><p>Slow-cooked mutton and spiced rice for a hearty centerpiece.</p></div>
+                            <span class="item-price">$15.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/jeera-rice.jpg" alt="Jeera Rice" class="menu-img">
+                            <div class="item-info"><h3>Jeera Rice</h3><p>Simple, fragrant basmati rice tempered with cumin seeds.</p></div>
+                            <span class="item-price">$7.99</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="breads">
+                    <h2>Breads</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/naan.jpg" alt="Naan" class="menu-img">
+                            <div class="item-info"><h3>Naan</h3><p>Soft leavened bread baked fresh in the tandoor.</p></div>
+                            <span class="item-price">$3.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/garlic-naan.jpg" alt="Garlic Naan" class="menu-img">
+                            <div class="item-info"><h3>Garlic Naan</h3><p>Classic naan topped with garlic, butter, and herbs.</p></div>
+                            <span class="item-price">$4.49</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/roti.jpg" alt="Roti" class="menu-img">
+                            <div class="item-info"><h3>Roti</h3><p>Whole wheat flatbread with a soft bite and rustic flavor.</p></div>
+                            <span class="item-price">$2.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/stuffed-kulcha.jpg" alt="Stuffed Kulcha" class="menu-img">
+                            <div class="item-info"><h3>Stuffed Kulcha</h3><p>Warm bread filled with a seasoned potato stuffing.</p></div>
+                            <span class="item-price">$5.49</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="drinks">
+                    <h2>Drinks</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/masala-chai.jpg" alt="Masala Chai" class="menu-img">
+                            <div class="item-info"><h3>Masala Chai</h3><p>Traditional Indian tea brewed with milk and warming spices.</p></div>
+                            <span class="item-price">$2.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/lassi.jpg" alt="Lassi" class="menu-img">
+                            <div class="item-info"><h3>Lassi</h3><p>Refreshing yogurt drink that is smooth, cool, and creamy.</p></div>
+                            <span class="item-price">$3.49</span>
+                        </article>
+                        <article class="menu-item" data-spice="medium">
+                            <img src="images/jaljeera.jpg" alt="Jaljeera" class="menu-img">
+                            <div class="item-info"><h3>Jaljeera</h3><p>A tangy cumin drink with a fresh and lively finish.</p></div>
+                            <span class="item-price">$2.49</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/thandai.jpg" alt="Thandai" class="menu-img">
+                            <div class="item-info"><h3>Thandai</h3><p>Cold milk drink with nuts and delicate aromatic spice.</p></div>
+                            <span class="item-price">$3.99</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="desserts">
+                    <h2>Desserts</h2>
+                    <div class="menu-items">
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" class="menu-img">
+                            <div class="item-info"><h3>Gulab Jamun</h3><p>Soft milk dumplings soaked in warm, fragrant syrup.</p></div>
+                            <span class="item-price">$4.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/rasmalai.jpg" alt="Rasmalai" class="menu-img">
+                            <div class="item-info"><h3>Rasmalai</h3><p>Delicate cheese dumplings in sweetened saffron milk.</p></div>
+                            <span class="item-price">$5.49</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/jalebi.jpg" alt="Jalebi" class="menu-img">
+                            <div class="item-info"><h3>Jalebi</h3><p>Crisp spirals glazed in syrup for a bright sweet finish.</p></div>
+                            <span class="item-price">$3.99</span>
+                        </article>
+                        <article class="menu-item" data-spice="mild">
+                            <img src="images/kulfi.jpg" alt="Kulfi" class="menu-img">
+                            <div class="item-info"><h3>Kulfi</h3><p>Traditional Indian ice cream with a dense, creamy texture.</p></div>
+                            <span class="item-price">$4.99</span>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="item-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" type="button" aria-label="Close dialog">&times;</button>
+            <img src="" alt="" class="modal-img">
+            <span class="modal-tag">Selected Dish</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <p class="modal-spice"></p>
+            <span class="modal-price"></span>
+            <button class="add-to-cart-btn" type="button">Add to Cart</button>
+            <a href="cart.html" class="cart-link-btn">Go to Cart</a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>Royal Thali</p>
+            <p>Curated Indian flavors for every table.</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
