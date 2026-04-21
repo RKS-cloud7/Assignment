@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Thali Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="menu.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">RT</span>
+                <div>
+                    <span>Royal Thali</span>
+                    <small>Curated dining experience</small>
+                </div>
+            </a>
+<nav class="site-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Order Review</p>
+                    <h1>Your Royal Thali cart is ready for checkout.</h1>
+                    <p class="hero-copy">Review items, adjust quantities, and confirm a smooth dining or pickup experience. Add more dishes from the menu anytime.</p>
+                    <div class="hero-actions">
+                        <a href="menu.html" class="btn primary">Back to Menu</a>
+                        <a href="#cart-section" class="btn secondary">View Order</a>
+                    </div>
+                </div>
+                <aside class="hero-card">
+                    <p>Today's Service Promise</p>
+                    <h2>Freshly packed in 25-30 minutes</h2>
+                    <ul>
+                        <li>Chef-packed favorites</li>
+                        <li>Pickup and dine-in ready</li>
+                        <li>Instant cart updates</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="cart-shell" id="cart-section">
+            <div class="container cart-layout">
+                <section class="cart-panel">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">Cart Section</p>
+                            <h2>Selected dishes</h2>
+                        </div>
+                        <button class="ghost-btn" id="clear-cart" type="button">Clear cart</button>
+                    </div>
+                    <div id="cart-items" class="cart-items"></div>
+                    <div id="empty-state" class="empty-state" hidden>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Add a few signature dishes from the Royal Thali menu to get started.</p>
+                        <a href="menu.html" class="btn primary">Browse Menu</a>
+                    </div>
+                </section>
+
+                <aside class="summary-panel">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">Summary</p>
+                            <h2>Order details</h2>
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <strong id="subtotal">$0.00</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Packaging</span>
+                            <strong id="packaging">$2.50</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <strong id="tax">$0.00</strong>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <strong id="total">$0.00</strong>
+                        </div>
+                        <button class="btn primary full-width" type="button" id="checkout-btn">Proceed to Checkout</button>
+                        <p class="summary-note">Demo checkout only. This page is fully functional for cart interaction.</p>
+                    </div>
+
+                    <div class="promo-card">
+                        <p class="eyebrow">Recommended Add-ons</p>
+                        <div class="promo-item">
+                            <img src="images/garlic-naan.jpg" alt="Garlic Naan">
+                            <div>
+                                <h3>Garlic Naan</h3>
+                                <p>Warm and fluffy, ideal for curries.</p>
+                            </div>
+                            <span>$3.49</span>
+                        </div>
+                        <div class="promo-item">
+                            <img src="images/gulab-jamun.jpg" alt="Gulab Jamun">
+                            <div>
+                                <h3>Gulab Jamun</h3>
+                                <p>A classic sweet finish to your meal.</p>
+                            </div>
+                            <span>$4.99</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

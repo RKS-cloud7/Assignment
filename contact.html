@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Thali Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="menu.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">RT</span>
+                <div>
+                    <span>Royal Thali</span>
+                    <small>Hospitality and reservations</small>
+                </div>
+            </a>
+<nav class="site-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Contact Section</p>
+                    <h1>Connect with Royal Thali for reservations, catering, or support.</h1>
+                    <p class="hero-copy">This contact page is designed as a polished customer touchpoint with clear contact cards, service hours, and a responsive message form.</p>
+                </div>
+                <div class="hero-card">
+                    <p class="eyebrow light">Guest Support</p>
+                    <h2>We usually reply within one business day.</h2>
+                    <p>Perfect for table bookings, private dining requests, celebration planning, and order help.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-shell">
+            <div class="container">
+                <div class="contact-grid">
+                    <section class="info-panel">
+                        <div class="section-heading">
+                            <div>
+                                <p class="eyebrow">Reach Us</p>
+                                <h2>Contact details</h2>
+                            </div>
+                        </div>
+
+                        <div class="info-cards">
+                            <article class="info-card">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 247-8841</p>
+                                <span>Daily support for dining and pickup</span>
+                            </article>
+                            <article class="info-card">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <h3>Email</h3>
+                                <p>hello@royalthali.com</p>
+                                <span>For reservations and event requests</span>
+                            </article>
+                            <article class="info-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h3>Visit</h3>
+                                <p>145 Heritage Avenue, San Jose, CA</p>
+                                <span>Elegant dining in the city center</span>
+                            </article>
+                        </div>
+
+                        <div class="hours-card">
+                            <p class="eyebrow">Opening Hours</p>
+                            <div class="hour-row"><span>Monday - Thursday</span><strong>11:30 AM - 10:00 PM</strong></div>
+                            <div class="hour-row"><span>Friday - Saturday</span><strong>11:30 AM - 11:00 PM</strong></div>
+                            <div class="hour-row"><span>Sunday</span><strong>12:00 PM - 9:30 PM</strong></div>
+                        </div>
+                    </section>
+
+                    <section class="form-panel">
+                        <div class="section-heading">
+                            <div>
+                                <p class="eyebrow">Message Us</p>
+                                <h2>Send an inquiry</h2>
+                            </div>
+                        </div>
+
+                        <form id="contact-form" novalidate>
+                            <div class="field-grid">
+                                <label>
+                                    Full Name
+                                    <input type="text" id="name" name="name" placeholder="Your name">
+                                </label>
+                                <label>
+                                    Email Address
+                                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                                </label>
+                            </div>
+
+                            <div class="field-grid">
+                                <label>
+                                    Phone Number
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567">
+                                </label>
+                                <label>
+                                    Subject
+                                    <select id="subject" name="subject">
+                                        <option value="">Choose a topic</option>
+                                        <option value="reservation">Reservation</option>
+                                        <option value="catering">Catering</option>
+                                        <option value="order-support">Order Support</option>
+                                        <option value="general">General Inquiry</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label>
+                                Your Message
+                                <textarea id="message" name="message" placeholder="Tell us how we can help"></textarea>
+                            </label>
+
+                            <div id="form-status" class="form-status" hidden></div>
+
+                            <button class="btn primary" type="submit">Send Message</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
