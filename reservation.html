@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Royal Thali</title>
+    <meta name="description" content="Reserve a table at Royal Thali for fine Indian dining, celebrations, and special evenings.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="about.html" aria-label="Royal Thali home">
+                <img src="images/desispice.com.logo.jpg" alt="Royal Thali logo">
+                <div>
+                    <span class="brand-kicker">Fine Indian Dining</span>
+                    <span class="brand-name">Royal Thali</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+<nav class="site-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="reservation-hero">
+            <div class="container hero-layout">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Reserve with confidence</p>
+                    <h1>Book a table for an elegant Royal Thali dining experience.</h1>
+                    <p>
+                        Whether you are planning a quiet dinner, a family gathering, or a business meal, we make reservations simple and smooth.
+                    </p>
+
+                    <div class="info-grid">
+                        <article>
+                            <span class="info-label">Hours</span>
+                            <strong>12:00 PM - 11:00 PM</strong>
+                        </article>
+                        <article>
+                            <span class="info-label">Best For</span>
+                            <strong>Dinners, events, celebrations</strong>
+                        </article>
+                        <article>
+                            <span class="info-label">Dining Style</span>
+                            <strong>Premium Indian hospitality</strong>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="form-shell reveal">
+                    <form class="reservation-form" id="reservation-form" novalidate>
+                        <div class="form-header">
+                            <p class="section-tag">Reservation Form</p>
+                            <h2>Save your table in minutes.</h2>
+                        </div>
+
+                        <div class="field-grid">
+                            <label class="field">
+                                <span>Full Name</span>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Phone Number</span>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Email Address</span>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Guests</span>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="10+">10+ Guests</option>
+                                </select>
+                            </label>
+
+                            <label class="field">
+                                <span>Date</span>
+                                <input type="date" id="date" name="date" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Time</span>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="1:30 PM">1:30 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                    <option value="8:30 PM">8:30 PM</option>
+                                    <option value="9:30 PM">9:30 PM</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <label class="field">
+                            <span>Special Request</span>
+                            <textarea id="request" name="request" rows="4" placeholder="Window seating, birthday setup, dietary notes, or event details"></textarea>
+                        </label>
+
+                        <button class="submit-btn" type="submit">Confirm Reservation</button>
+                        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-tag">What To Expect</p>
+                    <h2>Designed for smooth service from booking to dessert.</h2>
+                </div>
+
+                <div class="experience-grid">
+                    <article class="experience-card reveal">
+                        <h3>Priority Seating</h3>
+                        <p>Your table is prepared in advance so your arrival feels effortless.</p>
+                    </article>
+                    <article class="experience-card reveal">
+                        <h3>Celebration Support</h3>
+                        <p>We can help make birthdays, anniversaries, and group evenings feel extra special.</p>
+                    </article>
+                    <article class="experience-card reveal">
+                        <h3>Responsive Follow-Up</h3>
+                        <p>Your booking details stay visible on the page after submission for added clarity.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <span class="footer-brand">Royal Thali</span>
+                <p>Reserve today for polished service and unforgettable Indian cuisine.</p>
+            </div>
+            <p>For large events, please mention your group details in the special request field.</p>
+        </div>
+    </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
